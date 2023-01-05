@@ -6,22 +6,30 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+:focus {
+	outline: transparent;
+	box-shadow: 0 0 0 2px #00875f;
+}
+
+.commentForm:focus-within div {
+	visibility: visible;
+	max-height: none;
+}
+
 a,
 button {
 	cursor: pointer;
 }
 
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
 	width: 5px;
 }
 
-// scrollbar back
-html::-webkit-scrollbar-thumb {
-	background: #00b37e;
+body::-webkit-scrollbar-track {
+	background: #8d8d99;
 }
 
-// scrollbar line
-html::-webkit-scrollbar-track {
-	background: #202024;
+body::-webkit-scrollbar-thumb {
+	background-color: #00875f;
 	width: 3px;
 }

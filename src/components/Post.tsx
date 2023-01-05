@@ -61,6 +61,27 @@ export function Post() {
 					</p>
 				</div>
 			</div>
+
+			<form className="commentForm w-full mt-[1.5rem] pt-[1.5rem] border-t border-gray-600 ">
+				<strong className="leading-relaxed  text-white">
+					Deixe seu feedback
+				</strong>
+				<textarea
+					placeholder="Deixe seu comentário"
+					className="w-full bg-gray-900 border-0 resize-none p-4 rounded-lg
+					h-[6rem] leading-snug mt-4 "
+				></textarea>
+				<div className="invisible max-h-0">
+					<button
+						type="submit"
+						className="py-4 px-[1.5rem] mt-4 rounded-lg border-0	bg-green-500
+					text-white cursor-pointer font-bold hover:bg-green-300
+					transition-colors "
+					>
+						Publicar
+					</button>
+				</div>
+			</form>
 		</article>
 	);
 }

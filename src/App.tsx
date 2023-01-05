@@ -5,7 +5,7 @@ import "./styles/global.css";
 
 function App() {
 	return (
-		<div className="h-screen w-full bg-gray-900 text-gray-300 ">
+		<div className="h-full w-full pb-10 bg-gray-900 text-gray-300 ">
 			<Header />
 
 			<div
